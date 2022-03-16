@@ -1,4 +1,4 @@
+<img src="./img/home.png">
 
-
-
-https://spilotes.github.io/weather/
+Complete Form page developed with HTML, CSS and JavaScript.
+### See the project: https://spilotes.github.io/weather/
