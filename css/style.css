@@ -11,7 +11,7 @@
 
 body {
   display: flex;
-  background: url(../img/home1.png) no-repeat bottom;
+  background: linear-gradient(90deg, rgb(12, 2, 26), #1e0224, #031844);
   justify-content: center;
   align-items: center;
   flex-direction: column;
