@@ -12,7 +12,6 @@
 body {
   display: flex;
   background: url(../img/home1.png) no-repeat bottom;
-  background-size: 200%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
