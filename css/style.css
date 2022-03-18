@@ -221,6 +221,12 @@ footer .logo-footer {
 }
 
 @media (max-width: 414px) {
+  h1 {
+    margin: 1.3rem 0;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+  }
   .footer {
     height: 5rem;
     font-size: 0.9rem;
@@ -240,7 +246,7 @@ footer .logo-footer {
   footer .logo-footer {
     width: 6rem;
     height: 1.4rem;
-    margin-top: -0.2rem;
+    margin-top: -2rem;
     margin-right: 1rem;
     margin-left: 0.1rem;
   }
