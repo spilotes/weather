@@ -87,7 +87,9 @@ h1 {
 .busca {
   display: flex;
   width: 300px;
+  visibility: hidden;
 }
+
 .busca #searchInput {
   flex: 1;
   padding: 10px;
@@ -147,6 +149,7 @@ h1 {
   flex: 1;
   text-align: center;
 }
+
 .tempTitulo,
 .ventoTitulo {
   color: #777;
@@ -190,6 +193,14 @@ h1 {
   font-weight: 550;
 }
 
+.logo {
+  width: 8rem;
+  top: 36rem;
+  left: 49.7%;
+  position: absolute;
+  visibility: hidden;
+}
+
 @media (max-width: 414px) {
   h1 {
     margin: 1.3rem 0;
@@ -197,5 +208,8 @@ h1 {
     margin-left: 3rem;
     margin-bottom: 4rem;
   }
-  
+
+  .logo {
+    left: 48.3%;
+  }
 } ;
