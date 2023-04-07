@@ -1,5 +1,5 @@
-<img src="./img/mobile-home.jpeg">
-<img src="./img/desktop-home.png">
+<img src="./img/bg-mobile.jpeg">
+<img src="./img/bg-desktop.png">
 
 Weather page developed with HTML, CSS and JavaScript.
 ### See the project: https://spilotes.github.io/weather/
