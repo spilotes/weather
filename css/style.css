@@ -117,7 +117,7 @@ h1 {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%);
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 300;
   font-family: "Nanum Pen Script", cursive;
   line-height: 20vmin;
@@ -178,6 +178,17 @@ h1 {
     background-size: 50%;
     background-position: 0 0;
   }
+}
+
+.salutation {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-right: -50%;
+  transform: translate(-50%);
 }
 
 .busca {
@@ -320,15 +331,6 @@ h1 {
   100% {
     opacity: 1;
   }
-}
-
-/* Aplica a animação ao objeto */
-.github {
-  animation-name: animacao;
-  animation-duration: 2s;
-  animation-delay: 4s; /* Define um atraso de 2 segundos */
-  opacity: 0; /* Define a opacidade inicial como 0 */
-  animation-fill-mode: forwards;
 }
 
 .github .repository {

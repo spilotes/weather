@@ -12,6 +12,11 @@
     font-weight: 300;
   }
 
+  .salutation {
+    position: absolute;
+    top: 15.3vh;
+  }
+
   .busca {
     position: absolute;
     width: 78%;
