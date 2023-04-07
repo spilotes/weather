@@ -1,4 +1,4 @@
-<img src="./img/bg-mobile.jpeg" width="50px">
+<img src="./img/bg-mobile.jpeg" width="150px">
 <img src="./img/bg-desktop.png">
 
 Weather page developed with HTML, CSS and JavaScript.
