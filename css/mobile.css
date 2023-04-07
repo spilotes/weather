@@ -1,0 +1,40 @@
+@media (max-width: 414px) {
+  .logo1 {
+    top: 1.5vh;
+    left: 4vw;
+  }
+
+  .instagram {
+    top: 0.7rem;
+  }
+
+  .instagram .baby_bat_codes {
+    font-weight: 300;
+  }
+
+  .busca {
+    position: absolute;
+    width: 78%;
+    top: 30vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+  }
+
+  .busca #searchInput {
+    flex: 1;
+    padding: 0.5rem;
+  }
+
+  .busca button {
+    padding: 0.5rem;
+  }
+
+  .resultado {
+    top: 40vh;
+  }
+
+  .aviso {
+    top: 50vh;
+  }
+}

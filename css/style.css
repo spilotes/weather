@@ -1,29 +1,125 @@
 * {
   margin: 0;
   padding: 0;
+  color: #c9d1d9;
   box-sizing: border-box;
-}
-
-#home {
-  width: 100%;
-  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  display: flex;
-  background: linear-gradient(90deg, rgb(12, 2, 26), #1e0224, #031844);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    right bottom,
+    from(#121212),
+    to(#181818)
+  );
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #6b727c;
+  transition: all 300ms ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9d1d9;
+}
+
+.logo1 {
+  position: absolute;
+  top: 2.7vh;
+  left: 1.7vw;
+}
+
+.logo {
+  width: 3rem;
+  background: #121212;
+  border: 2px solid #c9d1d9;
+  border-radius: 50%;
+  transition: all 0.3 ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 0.4rem #c9d1d9);
+}
+
+.instagram {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+/* Define a animação */
+@keyframes animacao {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Aplica a animação ao objeto */
+.instagram {
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-delay: 4s; /* Define um atraso de 2 segundos */
+  opacity: 0; /* Define a opacidade inicial como 0 */
+  animation-fill-mode: forwards;
+}
+
+.instagram .baby_bat_codes {
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.instagram .baby_bat_codes:hover {
+  color: #fff;
+}
+
+.instagram .baby_bat_codes::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.instagram .baby_bat_codes:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 h1 {
-  margin: 1.3rem 0;
-  margin-top: 3rem;
-  margin-left: 3rem;
-  margin-bottom: 1rem;
+  position: absolute;
+  top: 8vh;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
   font-size: 3rem;
+  font-weight: 300;
+  font-family: "Nanum Pen Script", cursive;
   line-height: 20vmin;
 }
 
@@ -84,27 +180,24 @@ h1 {
   }
 }
 
-.logo {
-  width: 8rem;
-  top: 9rem;
-  left: 47%;
-  position: absolute;
-  visibility: hidden;
-}
-
 .busca {
-  display: flex;
-  width: 300px;
-  margin-top: 5rem;
+  position: absolute;
+  width: 290px;
+  top: 35vh;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
   visibility: hidden;
 }
 
 .busca #searchInput {
   flex: 1;
-  padding: 10px;
+  padding: 0.6rem;
+  background: #c9d1d9;
+  color: #121212;
   outline: none;
-  font-size: 15px;
-  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 0.2rem;
   border: 0;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
@@ -114,13 +207,13 @@ h1 {
 }
 
 .busca button {
-  padding: 10px;
-  font-size: 15px;
+  padding: 0.6rem;
+  font-size: 1rem;
   border: 0;
   background-color: #0066cc;
-  color: #fff;
-  border-radius: 5px;
-  margin-left: 10px;
+  color: #000;
+  border-radius: 0.2rem;
+  margin-left: 0.8rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -129,19 +222,23 @@ h1 {
 }
 
 .resultado {
+  position: absolute;
   width: 300px;
   display: none;
-  border: 1px dotted #fff;
-  margin-top: 20px;
-  border-radius: 5px;
+  border: 1px dotted #c9d1d9;
+  top: 45vh;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  border-radius: 0.2rem;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
   width: 100%;
-  color: #fff;
-  font-size: 25px;
-  font-weight: bold;
+  color: #c9d1d9;
+  font-size: 1.5rem;
+  font-weight: 500;
   text-align: center;
   padding: 20px;
 }
@@ -167,7 +264,7 @@ h1 {
 }
 .tempInfo,
 .ventoInfo {
-  color: #fff;
+  color: #c9d1d9;
   font-size: 30px;
   font-weight: bold;
 }
@@ -182,7 +279,7 @@ h1 {
 .ventoArea {
   width: 50px;
   height: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #c9d1d9;
   border-radius: 50%;
   margin: auto;
   margin-top: 20px;
@@ -192,25 +289,73 @@ h1 {
 .ventoPonto {
   width: 15px;
   height: 1px;
-  background-color: #fff;
+  background-color: #c9d1d9;
   transform-origin: left;
 }
 
 .aviso {
-  color: #fff;
-  padding-top: 30px;
-  font-weight: 550;
+  position: absolute;
+  top: 45vh;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  color: #c9d1d9;
+  padding-top: 1.9rem;
+  font-weight: 300;
 }
 
-@media (max-width: 414px) {
-  h1 {
-    margin: 1.3rem 0;
-    margin-top: 5rem;
-    margin-left: 3.5rem;
-    margin-bottom: 4rem;
-  }
+.github {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+}
 
-  .logo {
-    left: 41.5%;
+/* Define a animação */
+@keyframes animacao {
+  0% {
+    opacity: 0;
   }
-} ;
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Aplica a animação ao objeto */
+.github {
+  animation-name: animacao;
+  animation-duration: 2s;
+  animation-delay: 4s; /* Define um atraso de 2 segundos */
+  opacity: 0; /* Define a opacidade inicial como 0 */
+  animation-fill-mode: forwards;
+}
+
+.github .repository {
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.github .repository:hover {
+  color: #fff;
+}
+
+.github .repository::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.github .repository:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
