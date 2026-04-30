@@ -43,17 +43,18 @@ body {
   position: absolute;
   top: 2.7vh;
   left: 1.7vw;
+  filter: drop-shadow(0 0 0.2rem #000);
+  transition: all 0.3 ease-in-out;
 }
 
 .logo {
   width: 3rem;
   background: #121212;
-  border: 2px solid #c9d1d9;
+  border: 1.7px solid #c9d1d9;
   border-radius: 50%;
-  transition: all 0.3 ease-in-out;
 }
 
-.logo:hover {
+.logo1:hover {
   filter: drop-shadow(0 0 0.4rem #c9d1d9);
 }
 
