@@ -14,13 +14,13 @@
 
   .salutation {
     position: absolute;
-    top: 15.3vh;
+    top: 25.3vh;
   }
 
   .busca {
     position: absolute;
     width: 78%;
-    top: 30vh;
+    top: 50vh;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%);
