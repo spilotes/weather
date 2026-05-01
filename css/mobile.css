@@ -20,7 +20,7 @@
   .busca {
     position: absolute;
     width: 78%;
-    top: 50vh;
+    top: 40vh;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%);
