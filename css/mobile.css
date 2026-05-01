@@ -19,7 +19,8 @@
 
   .salutation {
     position: absolute;
-    top: 25.3vh;
+    top: 23vh;
+    font-size: 1.2rem;
   }
 
   .busca {
